@@ -46,8 +46,17 @@
             </a-marker>
 
             <a-entity camera></a-entity>
+            </a-entity>
+
+    <!-- "button" -->
+    <a-entity id="refresh-button" geometry="primitive: box" material="color: red" position="0 0 -2"></a>
+</a-scene>
         </a-scene>
-       
+        <script>
+    document.querySelector('#refresh-button').addEventListener('click', function() {
+       {
+      window.open('https://google.com', '_blank');
+</script>
 <audio src="music.mp3" autoplay loop></audio>
     </body>
 </html>
